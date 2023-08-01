@@ -10,7 +10,7 @@ function App() {
       {/*Bookmarks />*/}
       {/*<Categories />*/}
       {/*<RecentSearches />*/}
-      {/*<SearchBar />*/}
+      {/* <NewsCard*/}
       {/*<NewsFeed />*/}
 
     </div>
