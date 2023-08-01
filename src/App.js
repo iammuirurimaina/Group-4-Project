@@ -13,6 +13,8 @@ function App() {
       {/*<SearchBar />*/}
       {/*<NewsFeed />*/}
 
+      
+
     </div>
   );
 }
