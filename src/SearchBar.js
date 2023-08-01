@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SearchBar(){
+    const [searchData, setSearchData] = useState("")
+    function handleSearch (searchDataId){
+        const dataArray = searchData.filter((newSearchData) => {return(newSearchData.id===searchDataId)})
+        setSearchData(dataArray)
+    }
 return(
-    <div>
+    <div onClick={handleSearch}>
         <h1>SEARCH FOR THE TRENDING NEWS!</h1>
         <form>
             <label htmlFor='search'>Search News:</label>
