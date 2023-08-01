@@ -1,22 +1,25 @@
 import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 
 const NewsCard = ({ article }) => {
   const { title, description, author, source, publishedAt, url, urlToImage } = article;
 
   return (
-    <div className="news-card">
-      <img src={urlToImage} alt={title} className="card-image" />
-      <div className="card-content">
-        <h2 className="card-title">{title}</h2>
-        <p className="card-author">{author}</p>
-        <p className="card-source">{source.name}</p>
-        <p className="card-published">{publishedAt}</p>
-        <p className="card-description">{description}</p>
-        <a href={url} target="_blank" rel="noopener noreferrer" className="card-readmore">
+    <Card>
+      <Card.Img variant="top" src={urlToImage} />
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>
+          <p>{author}</p>
+          <p>{source.name}</p>
+          <p>{publishedAt}</p>
+        </Card.Text>
+        <Card.Text>{description}</Card.Text>
+        <Button variant="primary" href={url} target="_blank">
           Read more
-        </a>
-      </div>
-    </div>
+        </Button>
+      </Card.Body>
+    </Card>
   );
 };
 
