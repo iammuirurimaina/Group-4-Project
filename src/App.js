@@ -1,18 +1,11 @@
 import React from 'react';
-import './App.css';
+import NewsFeed from './NewsFeed';
 
 function App() {
   return (
-    <div className="App">
-      <h1>NewsFeed</h1>
-      {/*<NavBar />*/}
-      {/*<SearchBar />*/}
-      {/*Bookmarks />*/}
-      {/*<Categories />*/}
-      {/*<RecentSearches />*/}
-      {/* <NewsCard*/}
-      {/*<NewsFeed />*/}
-
+    <div className="container mt-4">
+      <h1 class ="text-center">NewsFeed</h1>
+      <NewsFeed />
     </div>
   );
 }
