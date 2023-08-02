@@ -13,9 +13,9 @@ const NewsCard = ({ article }) => {
           <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
-              <p>{author}</p>
-              <p>{source.name}</p>
-              <p>{publishedAt}</p>
+              <p>Author: {author}</p>
+              <p>Source: {source.name}</p>
+              <p>Published At: {publishedAt}</p>
             </Card.Text>
             <Card.Text>{description}</Card.Text>
             <Button variant="primary" href={url} target="_blank">
