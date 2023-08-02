@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container mt-4">
       <h1 class ="text-center">NewsFeed</h1>
-      <div>
+      <div class="text-center">
       <SearchBar/>
       </div>
      
