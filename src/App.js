@@ -1,19 +1,15 @@
 import React from 'react';
-import './App.css';
+
 import SearchBar from './SearchBar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>NewsFeed</h1>
-      {/*<NavBar />*/}
+    <div className="container mt-4">
+      <h1 class ="text-center">NewsFeed</h1>
+      <div className='searchBar'>
       <SearchBar />
-      {/*Bookmarks />*/}
-      {/*<Categories />*/}
-      {/*<RecentSearches />*/}
-      {/* <NewsCard*/}
-      {/*<NewsFeed />*/}
-
+      </div>
+      
     </div>
   );
 }
