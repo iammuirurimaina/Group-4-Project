@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Card, Button } from 'react-bootstrap';
 
-const NewsCard = ({ article }) => {
+const NewsCard = ({ article,bookmarkArticle }) => {
   const { title, description, author, source, publishedAt, url, urlToImage } = article;
+  const [bookmarked,setBookmarked] =useState(false)
+    const handleBookmarkArticle = (article) => {
+       bookmarkArticle(article)
+      setBookmarked(!bookmarked)
+
+    }
 
   return (
     <div className="row justify-content-center">
@@ -20,6 +26,9 @@ const NewsCard = ({ article }) => {
             <Card.Text>{description}</Card.Text>
             <Button variant="primary" href={url} target="_blank">
               Read more
+            </Button>
+            <Button variant="primary" onClick={() => handleBookmarkArticle(article)}>
+              Bookmark
             </Button>
           </Card.Body>
         </Card>
