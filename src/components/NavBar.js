@@ -1,18 +1,49 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function NavBar () {
+    const LinkStyle = {
+        display: "block",
+  width: "60px",
+  height: "45px",
+  padding: "8px",
+  margin: "100px;",
+  float: "left",
+  border: "1 px solid",
+  background:  "#dddddd",
+  textDecoration: "none",
+  color: "darkblue"
+    };
+
     return (
     <div>
-        <Link to="/">
+        <NavLink
+         to="/"
+         style={LinkStyle}
+         activeStyle={{
+            background: 'darkblue'
+         }}
+        >
         Home
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink 
+        to="/about"
+        style={LinkStyle}
+        activeStyle={{
+            background: "darkblue"
+        }}
+        >
         About
-        </Link>
-        <Link to="/Login">
+        </NavLink>
+        <NavLink 
+        to="/Login"
+        style={LinkStyle}
+        activeStyle={{
+            background:"darkblue"
+        }}
+        >
             Login
-        </Link>
+        </NavLink>
     </div>)
 }
 
