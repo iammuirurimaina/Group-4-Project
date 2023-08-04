@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+**NewsFeed**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a News Aggregator web application built with React that allows users to view and search for the latest news articles from various sources. The app fetches data from the News API (https://newsapi.org/) to display the top headlines and allows users to search for articles based on keywords.
 
-## Available Scripts
+Features
+Display top headlines from the News API on the homepage.
+Search for news articles based on keywords using the search bar.
+View detailed information about each article, including the title, description, author, source, published date, and image.
+Bookmark articles and view them in the bookmarks section on the left sidebar.
+Responsive design that works well on both desktop and mobile devices.
 
-In the project directory, you can run:
+**Technologies Used**
+React: Frontend JavaScript library for building user interfaces.
+React Router: For handling routing and navigation within the app.
+Axios: For making HTTP requests to the News API.
+Semantic UI: For styling the components and providing a modern look and feel.
+Bootstrap: For additional styling and responsiveness.
 
-### `npm start`
+**How to Use the App**
+To run the app locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the repository to your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install
 
-### `npm test`
+Start the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
+Open your browser and go to http://localhost:3000 to view the app.
 
-### `npm run build`
+**Usage**
+The homepage displays the top headlines from the News API.
+Use the search bar to search for news articles based on keywords. Press "Enter" or click the "Submit" button to perform the search.
+Click on any article title to view more details about the article.
+Use the bookmark icon in each article card to bookmark an article. Bookmarked articles will be displayed in the bookmarks section on the left sidebar.
+The bookmarks are stored in the browser's localStorage, so they will persist even after the page is refreshed or closed.
+Contributing
+The Project was done in Collaboration with Wayne Keya, Vany Ikunze, Dennis Mwangi and Ian Maina
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**License**
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Acknowledgments**
+Thanks to the creators of the News API for providing the data for this project.
+Special thanks to the developers of React, Semantic UI, and Bootstrap for their awesome libraries and tools.
