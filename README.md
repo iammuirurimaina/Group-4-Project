@@ -17,16 +17,7 @@ Semantic UI: For styling the components and providing a modern look and feel.
 Bootstrap: For additional styling and responsiveness.
 
 **How to Use the App**
-To run the app locally, follow these steps:
-
-Clone the repository to your local machine:
-
-npm install
-
-Start the development server:
-
-npm start
-Open your browser and go to http://localhost:3000 to view the app.
+Visit https://news-feed-taupe.vercel.app/
 
 **Usage**
 The homepage displays the top headlines from the News API.
@@ -34,12 +25,20 @@ Use the search bar to search for news articles based on keywords. Press "Enter" 
 Click on any article title to view more details about the article.
 Use the bookmark icon in each article card to bookmark an article. Bookmarked articles will be displayed in the bookmarks section on the left sidebar.
 The bookmarks are stored in the browser's localStorage, so they will persist even after the page is refreshed or closed.
-Contributing
+
+
+**Contributing**
+
+
 The Project was done in Collaboration with Wayne Keya, Vany Ikunze, Dennis Mwangi and Ian Maina
 
 **License**
+
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 **Acknowledgments**
+
+
 Thanks to the creators of the News API for providing the data for this project.
 Special thanks to the developers of React, Semantic UI, and Bootstrap for their awesome libraries and tools.
