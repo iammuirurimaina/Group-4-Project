@@ -2,23 +2,28 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import NewsCard from './NewsCard';
 import SidebarLeft from './components/SidebarLeft';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from 'react-bootstrap';
 
-
-const NewsFeed = () => {
+const NewsFeed = ({ searchQuery }) => {
   const [articles, setArticles] = useState([]);
-const [bookmarkedArticles,setBookmarkedArticles] = useState([]);
+  const [bookmarkedArticles, setBookmarkedArticles] = useState([]);
+
   useEffect(() => {
     const apiKey = '2513b10261db49bb8b031bc8cc66e9e9';
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+    let apiUrl;
+    if (searchQuery) {
+      apiUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(
+        searchQuery
+      )}&apiKey=${apiKey}`;
+    } else {
+      apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+    }
 
     axios
       .get(apiUrl)
       .then((response) => setArticles(response.data.articles))
-      
       .catch((error) => console.error('Error fetching data:', error));
-      console.log(setArticles)
-  }, []);
+  }, [searchQuery]);
 
 
   // Function to handle bookmarking an article

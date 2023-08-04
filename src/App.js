@@ -8,6 +8,7 @@ import NewsFeed from './NewsFeed';
 import SearchBar from './SearchBar';
 
 
+
 function App() {
   return (
     <div className="container mt-4">

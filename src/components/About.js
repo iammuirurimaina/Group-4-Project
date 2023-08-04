@@ -36,12 +36,21 @@ const About = () => {
   return (
     <div className="container mt-4">
       <h1 className="text-center">About Us</h1>
-      <div className="ui centered segment">
+      <div
+        className="ui centered segment"
+        style={{ fontFamily: 'Open Sans', fontSize: '1.5rem', lineHeight: '2rem' }}
+      >
         <p>
-          Welcome to our news aggregator site. We aim to provide you with the latest and most
-          relevant news from various sources.
+          Welcome to our news aggregator site. We aim to provide you with the latest and most relevant news from various sources. Our team of dedicated professionals works hard to curate and deliver the most important and up-to-date information right to your fingertips.
+        </p>
+        <p>
+          Our mission is to keep you informed, whether it's breaking news, in-depth analysis, or the latest trends and developments. We believe in the power of information to empower individuals and shape the world.
+        </p>
+        <p>
+          Join us on this exciting journey as we strive to bring you the best news experience possible. Feel free to explore our website and discover the latest stories that matter most to you.
         </p>
       </div>
+      <br />
       <br />
       <div className="ui raised segment">
         <h2 className="text-center">Meet the Team</h2>
