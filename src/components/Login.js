@@ -18,7 +18,7 @@ function Login() {
   }
 
   return (
-    <div className="ui grid centered">
+    <div className="ui grid centered" style={{marginTop:"150px"}}>
       <div className="ui six wide column">
         <form onSubmit={handleSubmit} className="ui form">
           <h1 className="ui header">Login</h1>
